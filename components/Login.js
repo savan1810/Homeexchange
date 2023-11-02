@@ -46,7 +46,7 @@ const Login = () => {
         <input type="password" name="" id="" value={password} placeholder='password'  onChange={event=>setPassword(event.target.value)}/>
         <button className='-ml-5 my-2  w-full bg-red-500 text-xl p-2 outline-0 text-white rounded-2xl' >Login</button>
         <div className='text-center text-gray-500'>
-          <span>Don't have registered yet? </span>
+          <span>Don&lsquo;t have registered yet? </span>
           <Link href="/signup"><span className='underline text-xl text-gray-700'>Sign up</span></Link>
         </div>
       </form>
