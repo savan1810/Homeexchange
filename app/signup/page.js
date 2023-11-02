@@ -22,7 +22,7 @@ const VisuallyHiddenInput = styled('input')({
 });
 
 
-const page = () => {
+const Page = () => {
 
     // const navigate = useNavigate();
     const [email, setEmail] = useState('')
@@ -121,4 +121,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

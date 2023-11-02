@@ -5,7 +5,7 @@ import React,{useState} from 'react'
 // import { useNavigate } from 'react-router-dom';
 
 
-const page = () => {
+const Page = () => {
 
   // const navigate = useNavigate();
   const [email, setEmail] = useState('')
@@ -45,7 +45,7 @@ const page = () => {
         <input type="password" name="" id="" value={password} className='outline-0 w-full my-2 px-4 py-2 border rounded-xl' placeholder='Password'  onChange={event=>setPassword(event.target.value)}/>
         <button className='  w-full bg-red-500 hover:bg-red-400 text-xl p-2 my-2 outline-0 text-white rounded-2xl' >Login</button>
         <div className='text-center mt-2 text-gray-500'>
-          <span>Don't have registered yet? </span>
+          <span>Don&lsquo;t have registered yet? </span>
           <Link href="/signup"><span className='underline md:text-xl text-lg  text-[#363062]'>Sign up</span></Link>
         </div>
       </form>
@@ -54,4 +54,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
