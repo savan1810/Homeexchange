@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -7,7 +8,7 @@ const page = () => {
             <div className="mt-10 w-5/6 mx-auto grid gap-x-6 gap-y-8 xl:grid-cols-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                 <Link className='relative mx-auto' href={'/apartment'}>
                     <div className="relative  mb-2 rounded-2xl flex">
-                        <img className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-13903824/original/82d996fb-d7c4-46a8-a713-febd281cd69f.jpeg?im_w=960" alt="" />
+                        <Image className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-13903824/original/82d996fb-d7c4-46a8-a713-febd281cd69f.jpeg?im_w=960" alt="" />
                     </div>
                     <div className='absolute top-[2%] left-[77%] text-white bg-black bg-opacity-50 rounded-2xl py-2 px-3'>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24 " strokeWidth={1.5} stroke="currentColor" className="w-8 h-8  ">
@@ -25,7 +26,7 @@ const page = () => {
                 </Link>
                 <Link className='relative mx-auto' href={'/apartment'}>
                     <div className="relative  mb-2 rounded-2xl flex">
-                        <img className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=960" alt="" />
+                        <Image className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-668146487515150072/original/8ff2a532-e0cd-41a2-9164-554c4d9eb28a.jpeg?im_w=960" alt="" />
                     </div>
                     <div className='absolute top-[2%] left-[77%] text-white bg-black bg-opacity-50 rounded-2xl py-2 px-3'>
 
@@ -44,7 +45,7 @@ const page = () => {
                 </Link>
                 <Link className="relative mx-auto" href={'/apartment'}>
                     <div className="relative  mb-2 rounded-2xl flex">
-                        <img className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-668877859013653763/original/3907f6c6-5cf2-42e8-a9e0-12c2b88ca82f.jpeg?im_w=960" alt="" />
+                        <Image className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-668877859013653763/original/3907f6c6-5cf2-42e8-a9e0-12c2b88ca82f.jpeg?im_w=960" alt="" />
                     </div>
                     <div className='absolute top-[2%] left-[77%] text-white bg-black bg-opacity-50 rounded-2xl py-2 px-3'>
 
@@ -63,7 +64,7 @@ const page = () => {
                 </Link>
                 <Link className='relative mx-auto' href={'/apartment'}>
                     <div className="relative  mb-2 rounded-2xl flex">
-                        <img className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-757096670950759113/original/1aec33de-3097-4fb4-aa7c-f549f63633ca.jpeg?im_w=960" alt="" />
+                        <Image className="rounded-2xl h-[270px] w-[270px] sm:object-cover sm:aspect-square" src="https://a0.muscache.com/im/pictures/miso/Hosting-757096670950759113/original/1aec33de-3097-4fb4-aa7c-f549f63633ca.jpeg?im_w=960" alt="" />
                     </div>
                     <div className='absolute top-[2%] left-[77%] text-white bg-black bg-opacity-50 rounded-2xl py-2 px-3'>
 
