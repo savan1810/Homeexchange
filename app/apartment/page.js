@@ -158,7 +158,7 @@ const Page = () => {
     return (
         <div>
             <div className="mt-10 w-5/6 mx-auto grid gap-x-6 gap-y-8 xl:grid-cols-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-                <Link className='relative mx-auto group' href={'/apartment'}>
+                <div className='relative mx-auto group' >
                     <div className="relative -z-10  mb-2 rounded-2xl flex">
                         <Image height={270} width={270} className="rounded-2xl h-[300px] w-[300px] sm:h-[270px] sm:w-[270px] sm:object-cover sm:aspect-square" src={slides1[currentIndex1].url} alt="" />
                     </div>
@@ -193,10 +193,10 @@ const Page = () => {
                         <span className="font-medium mr-1">$1000<span> per month</span></span>
                     </div>
 
-                </Link>
+                </div>
 
 
-                <Link className='relative mx-auto group' href={'/apartment'}>
+                <div className='relative mx-auto group' >
                     <div className="relative -z-10  mb-2 rounded-2xl flex">
                         <Image height={270} width={270} className="rounded-2xl h-[300px] w-[300px] sm:h-[270px] sm:w-[270px]  sm:object-cover sm:aspect-square" src={slides2[currentIndex2].url} alt="" />
                     </div>
@@ -233,8 +233,8 @@ const Page = () => {
                     <div className="mt-1 flex items-center">
                         <span className="font-medium mr-1">$1000<span> per month</span></span>
                     </div>
-                </Link>
-                <Link className="relative mx-auto group" href={'/apartment'}>
+                </div>
+                <div className="relative mx-auto group" >
                     <div className="relative  -z-10 mb-2 rounded-2xl flex">
                         <Image height={270} width={270} className="rounded-2xl h-[300px] w-[300px] sm:h-[270px] sm:w-[270px]  sm:object-cover sm:aspect-square" src={slides3[currentIndex3].url} alt="" />
                     </div>
@@ -270,8 +270,8 @@ const Page = () => {
                     <div className="mt-1 flex items-center">
                         <span className="font-medium mr-1">$1000<span > per month</span></span>
                     </div>
-                </Link>
-                <Link className='relative mx-auto group' href={'/apartment'}>
+                </div>
+                <div className='relative mx-auto group' >
                     <div className="relative -z-10  mb-2 rounded-2xl flex">
                         <Image height={270} width={270} className="rounded-2xl h-[300px] w-[300px] sm:h-[270px] sm:w-[270px]  sm:object-cover sm:aspect-square" src={slides4[currentIndex4].url} alt="" />
                     </div>
@@ -309,7 +309,7 @@ const Page = () => {
                     <div className="mt-1 flex items-center">
                         <span className="font-medium mr-1">$1000<span> per month</span></span>
                     </div>
-                </Link>
+                </div>
 
             </div>
         </div>
