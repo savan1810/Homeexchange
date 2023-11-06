@@ -1,7 +1,7 @@
 .border_transition:after{
     content: "";
     position: absolute;
-    top: 100%;
+    top: 120%;
     left: 0;
     /* FBA1B7 */
     background-color: #fa8d09;
@@ -17,13 +17,18 @@
 .back_image::before { 
     pointer-events: none;
     content: ""; 
-    position: absolute; 
+    position: fixed; 
     top: 0px; 
     right: 0px; 
     bottom: 0px; 
     left: 0px; 
-    background-image: url( '/bg-1.jpeg'); 
-    background-size: contain;  
-    opacity: 0.1; 
+    background-image:
+    linear-gradient(to bottom, rgba(14, 13, 13, 0.795), rgba(14, 13, 13, 0.795)),
+    url('/home.jpeg');
+    /* background-image: url( '/home.jpeg');  */
+    background-size: cover;  
+    z-index: -1;
+    /* opacity: 0.1;  */
     
 } 
+

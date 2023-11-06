@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React from 'react'
 import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
@@ -54,7 +54,9 @@ const Page = () => {
 
 
     return (
-        <div className='z-10 flex sm:w-1/2 md:w-3/4 lg:2/3  w-3/5  justify-center items-center mx-auto back_image'>
+        <div className='back_image min-h-full '>
+
+        <div className=' transition ease-in-out delay-150  duration-300 z-10 flex sm:w-1/2 md:w-3/4 lg:2/3  w-3/5 mt-1 justify-center items-center mx-auto  '>
             <div className='bg-white px-4 py-2 mx-auto rounded-2xl border shadow-2xl flex-col items-center justify-center z-10 '>
                 <p className="md:text-2xl text-xl font-medium text-center  tracking-wider">Sign Up</p>
                 <form className="mt-2 mx-auto flex-col justify-center items-center">
@@ -109,13 +111,14 @@ const Page = () => {
                         </div>
                     </div>
                     <div className='p-4 text-center'>
-                    <button className='w-full bg-red-500 hover:bg-red-400 text-xl p-2 my-2 outline-0 text-white rounded-2xl' >Sign Up</button>
+                    <button className='w-full bg-red-500 hover:bg-red-400 text-xl p-2  outline-0 text-white rounded-2xl' >Sign Up</button>
                     </div>
-                    <div className='text-center  text-gray-500'>
+                    {/* <div className='text-center  text-gray-500'>
                         <span>Already a member? </span>
                         <Link href="/login"><span className='underline  text-[#363062] md:text-xl text-lg'>Login</span></Link>
-                    </div>
+                    </div> */}
                 </form>
+        </div>
             </div>
         </div>
     )
