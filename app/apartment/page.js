@@ -75,61 +75,81 @@ const Page = () => {
     const [currentIndex3, setCurrentIndex3] = useState(0);
     const [currentIndex4, setCurrentIndex4] = useState(0);
 
-    const prevSlide1 = () => {
+    const prevSlide1 = (event) => {
+        event.preventDefault()
         const isFirstSlide = currentIndex1 === 0;
         const newIndex = isFirstSlide ? slides1.length - 1 : currentIndex1 - 1;
         setCurrentIndex1(newIndex);
     };
     const prevSlide2 = () => {
+        event.preventDefault()
+
         const isFirstSlide = currentIndex2 === 0;
         const newIndex = isFirstSlide ? slides2.length - 1 : currentIndex2 - 1;
         setCurrentIndex2(newIndex);
     }
-    const prevSlide3 = () => {
+    const prevSlide3 = (event) => {
+        event.preventDefault()
         const isFirstSlide = currentIndex3 === 0;
         const newIndex = isFirstSlide ? slides3.length - 1 : currentIndex3 - 1;
         setCurrentIndex3(newIndex);
     };
-    const prevSlide4 = () => {
+    const prevSlide4 = (event) => {
+        event.preventDefault()
+
         const isFirstSlide = currentIndex4 === 0;
         const newIndex = isFirstSlide ? slides4.length - 1 : currentIndex4 - 1;
         setCurrentIndex4(newIndex);
     };
 
-    const nextSlide1 = () => {
+    const nextSlide1 = (event) => {
+        event.preventDefault()
+
         const isLastSlide = currentIndex1 === slides1.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex1 + 1;
         setCurrentIndex1(newIndex);
     };
-    const nextSlide2 = () => {
+    const nextSlide2 = (event) => {
+        event.preventDefault()
+
         const isLastSlide = currentIndex2 === slides2.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex2 + 1;
         setCurrentIndex2(newIndex);
     };
-    const nextSlide3 = () => {
+    const nextSlide3 = (event) => {
+        event.preventDefault()
+
         const isLastSlide = currentIndex3 === slides3.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex3 + 1;
         setCurrentIndex3(newIndex);
     };
-    const nextSlide4 = () => {
+    const nextSlide4 = (event) => {
+        event.preventDefault()
+
         const isLastSlide = currentIndex4 === slides4.length - 1;
         const newIndex = isLastSlide ? 0 : currentIndex4 + 1;
         setCurrentIndex4(newIndex);
     };
 
-    const goToSlide1 = (slideIndex) => {
+    const goToSlide1 = (slideIndex,event) => {
+        event.preventDefault()
+
         setCurrentIndex1(slideIndex);
     };
     
-    const goToSlide2 = (slideIndex) => {
+    const goToSlide2 = (slideIndex,event) => {
+        event.preventDefault()
+
         setCurrentIndex2(slideIndex);
     };
     
-    const goToSlide3 = (slideIndex) => {
+    const goToSlide3 = (slideIndex,event) => {
+        event.preventDefault()
         setCurrentIndex3(slideIndex);
     };
     
-    const goToSlide4 = (slideIndex) => {
+    const goToSlide4 = (slideIndex,event) => {
+        event.preventDefault()
         setCurrentIndex4(slideIndex);
     };
     
