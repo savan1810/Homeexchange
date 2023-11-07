@@ -1,10 +1,13 @@
 
 import Link from 'next/link'
 import '../style/style.css'
+import Navbar from '@/components/Navbar'
 
 
 export default function Home() {
   return (
+    <div>
+<Navbar/>
     <div className='w-full  back_image ' >
 
       <div className=' flex justify-center items-center w-full h-[85vh]' >
@@ -19,6 +22,7 @@ export default function Home() {
           <p className='text-center mt-10'>
             <Link href='/about' className='py-2 px-6 tracking-wide  text-gray-50 bg-orange-400  '>Learn More</Link>
           </p>
+    </div>
         </div>
       </div>
     </div>

@@ -1,7 +1,10 @@
+import Navbar from '@/components/Navbar'
 import React from 'react'
 
 const page = () => {
     return (
+        <div>
+    <Navbar/>
         <div className='bg-gradient-to-r from-[#fdfcfb] to-[#e2d1c3] '>
             <div className='w-4/6 mx-auto '>
                 <p className='text-center  py-4 md:text-3xl text-xl  font-semibold tracking-wide text-gray-700'>Meet the team</p>
@@ -49,6 +52,7 @@ const page = () => {
                 </div>
 
             </div>
+        </div>
         </div>
     )
 }

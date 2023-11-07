@@ -6,6 +6,7 @@ import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight,faAngleLeft } from '@fortawesome/free-solid-svg-icons'
 import { RxDotFilled } from 'react-icons/rx';
+import Navbar from '@/components/Navbar'
 
 
 const Page = () => {
@@ -157,6 +158,7 @@ const Page = () => {
 
     return (
         <div>
+        <Navbar/>
             <div className="mt-10 w-5/6 mx-auto grid gap-x-6 gap-y-8 xl:grid-cols-4  lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                 <div className='relative mx-auto group' >
                     <div className="relative -z-10  mb-2 rounded-2xl flex">
