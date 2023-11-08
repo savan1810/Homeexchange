@@ -26,7 +26,9 @@ const Navbar = () => {
         setAnchorEl(null);
     };
     return (
-        <div className={`py-2 border-b ${(pathname !== '/' ) ? 'border-b ':'border-b-gray-500'}  text-white opacity-90 flex items-center justify-between px-8`}>
+        <div className={`${pathname==='/about' && 'bg-black text-gray-200 '} ${pathname==='/login' && 'bg-black text-gray-200'} ${pathname==='/signup' && 'bg-black text-gray-200 '} `} >
+
+        <div className={`py-2 ${(pathname === '/')  && ' border-b border-b-gray-500'}  ${(pathname === '/apartment')  && ' border-b border-b-gray-300'} ${pathname==='/about' && ' bg-black '} ${pathname==='/login' && ' bg-black'}  text-[#e5e7eb] opacity-90 flex items-center justify-between px-8`}>
             <div className='flex justify-center items-center gap-4'>
                 <Link href='/'>
                     <Image src={`${pathname === '/about' | '/apartment' ? '/logo.jpeg' : '/logo.jpeg'}`} height={90} width={90} alt='Homies' />
@@ -46,69 +48,55 @@ const Navbar = () => {
                         <SearchIcon className=' text-white scale-75' />
                     </div>
                 </div> */}
-            <div className='hidden lg:flex' >
-                <ul className={`ml-4 ${(pathname ===  '/about' ) &&  'text-black'} ${(pathname ===  '/apartment' ) &&  'text-black'}  flex items-center justify-between gap-8  `}>
-                    <li ><Link href='/about' className={` relative border_transition  ${pathname === '/about' && 'text-orange-400'}`}>About Us</Link></li>
-                    <li ><Link href='/apartment' className={`relative border_transition  ${pathname === '/apartment' && 'text-orange-400'}`}>Apartments</Link></li>
-                    <div className={`mx-4 font-light hover:shadow-lg flex justify-between items-center border ${pathname === '/about'  ? 'border-gray-300' :'border-gray-300'}  rounded-full  cursor-pointer `}>
-                    <Button className=' hove' variant="" size='large' sx={{}}
-                            id="basic-button"
-                            aria-controls={open ? 'basic-menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleClick}
+            <div className='hidden lg:flex'>
+                <ul className={`ml-4 ${(pathname === '/about') && 'text-gray-50'} ${(pathname === '/apartment') && 'text-black'}  flex items-center justify-between gap-8  `}>
+                    <li ><Link href='/' className={` relative border_transition  ${pathname === '/' && 'text-blue-400'}`}>Home</Link></li>
+                    <li ><Link href='/about' className={` relative border_transition  ${pathname === '/about' && 'text-blue-400'}`}>About Us</Link></li>
+                    <li ><Link href='/apartment' className={`relative border_transition  ${pathname === '/apartment' && 'text-blue-400'}`}>Apartments</Link></li>
+                   <li><Link href='/login'>
+
+
+                        <button className='text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium rounded-lg text-sm px-8 py-2.5 text-center  '  
+                            
                         >
-                        <MenuIcon className='mx-2   ' />
-                        <AccountCircleIcon className='mx-2 scale-125 -mt-1' />
-                        </Button>
-                        <Menu
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
-                            MenuListProps={{
-                                'aria-labelledby': 'basic-button',
-                            }}
-                        >
-                            <MenuItem onClick={handleClose}><Link href='/signup'>SignUp</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link href='/login'>Login</Link></MenuItem>
-                            {/* <MenuItem onClick={handleClose}><Link href='/about'>About Us</Link></MenuItem> */}
-                        </Menu>
+                                Login
+                            
+                        </button>
+                   </Link>
                         
-                    </div>
+                   </li>
+
+                    
                 </ul>
             </div>
-            <div className='lg:hidden  block'>
-                        <Button className=' ' variant="" size='large' sx={{}}
-                            id="basic-button"
-                            aria-controls={open ? 'basic-menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open ? 'true' : undefined}
-                            onClick={handleClick}
-                        >
-                        
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-8 h-8 ${((pathname==='/about') || (pathname==='/apartment')) ?   'text-black' :'text-white'} `}>
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                            </svg>
-
-
-
-                        </Button>
-                        <Menu
-                            id="basic-menu"
-                            anchorEl={anchorEl}
-                            open={open}
-                            onClose={handleClose}
-                            MenuListProps={{
-                                'aria-labelledby': 'basic-button',
-                            }}
-                        >
-                            <MenuItem onClick={handleClose}><Link href='/about'>About Us</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link href='/apartment'>Apartments</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link href='/login'>Login</Link></MenuItem>
-                            <MenuItem onClick={handleClose}><Link href='/signup'>SignUp</Link></MenuItem>
-                        </Menu>
-                    </div>
+            <div className='lg:hidden  flex'>
+                <Button className=' ' variant="" size='large' sx={{}}
+                    id="basic-button"
+                    aria-controls={open ? 'basic-menu' : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={open ? 'true' : undefined}
+                    onClick={handleClick}
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={`w-8 h-8 ${((pathname === '/about') || (pathname === '/apartment')) ? 'text-black' : 'text-white'} `}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </Button>
+                <Menu
+                    id="basic-menu"
+                    anchorEl={anchorEl}
+                    open={open}
+                    onClose={handleClose}
+                    MenuListProps={{
+                        'aria-labelledby': 'basic-button',
+                    }}
+                >
+                    <Link href='/about'><MenuItem onClick={handleClose}>About Us</MenuItem></Link>
+                    <Link href='/apartment'><MenuItem onClick={handleClose}>Apartments</MenuItem></Link>
+                    <Link href='/login'><MenuItem onClick={handleClose}>Login</MenuItem></Link>
+                    <Link href='/signup'><MenuItem onClick={handleClose}>SignUp</MenuItem></Link>
+                </Menu>
+            </div>
+        </div>
         </div>
     )
 }

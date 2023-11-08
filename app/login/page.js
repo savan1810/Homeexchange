@@ -1,5 +1,6 @@
 'use client'
 
+import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -9,7 +10,9 @@ const Page = () => {
   const [password, setPassword] = useState('')
 
   return (
-    <div className='h-[100vh] w-[100vw]' style={{ backgroundImage: "url(/login_bg.svg)" }}>
+    <div className='overflow-x-hidden'>
+    <Navbar/>
+    <div className='h-[87vh] w-[100vw]' style={{ backgroundImage: "url(/login_bg.svg)" }}>
       {/* <Image src="/login_bg.svg"  alt='login_bg'/> */}
 
       <div className='grid lg:grid-cols-2 grid-cols-1 h-full w-full'>
@@ -17,8 +20,8 @@ const Page = () => {
           <p className='text-xl font-medium '>HOMIES</p>
           <p className='text-4xl mt-4 font-bold'>Login to continue</p>
         </div>
-        <div className=' lg:w-3/5   bg-white mx-auto flex justify-center items-center  sm:my-10 my-24 rounded-xl'>
-            <div className=' z-10 px-4   mx-auto flex flex-col items-center justify-center sm:gap-16 gap-24 '>
+        <div className=' lg:w-3/5   bg-white mx-auto flex justify-center items-center  sm:my-10 my-16 rounded-xl'>
+            <div className=' z-10 px-4   mx-auto flex flex-col items-center justify-center sm:gap-12 gap-20 '>
             <div className='text-2xl   mb-4 text-center  tracking-wide'>
               <p className='font-semibold'>HOMIES.com</p>
               <p className="mt-4 text-xl">Let&lsquo;s Login</p>
@@ -38,6 +41,7 @@ const Page = () => {
            </div>
         </div>
       </div>
+    </div>
     </div>
   )
 }

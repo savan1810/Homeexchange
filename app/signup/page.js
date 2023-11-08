@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import '@/style/style.css'
+import Navbar from '@/components/Navbar';
 
 // import axios from 'axios';
 // import { useNavigate } from 'react-router-dom';
@@ -54,7 +55,10 @@ const Page = () => {
 
 
     return (
-        <div className='back_image min-h-full '>
+        <div className='overflow-x-hidden'>
+        <Navbar/>
+        <div className=' w-[100vw] bg-gray-950 ' >
+
             <div className='  z-10 flex   lg:w-2/3  justify-center items-center mx-auto  '>
                 <div className='bg-white px-4 py-4 my-10 mx-auto rounded-xl border shadow-2xl flex-col items-center justify-center z-10 '>
                     <div className='text-2xl  mb-4 text-center  tracking-wide'>
@@ -111,6 +115,7 @@ const Page = () => {
                     </form>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

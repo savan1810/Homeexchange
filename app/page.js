@@ -20,7 +20,7 @@ export default function Home() {
             HOMIES is a platform where exchange students can exchange housing with each other.HOMIES offers an easy and safe way to find housing in Europe.
           </p>
           <p className='text-center mt-10'>
-            <Link href='/about' className='py-2 px-6 tracking-wide  text-gray-50 bg-orange-400  '>Learn More</Link>
+            <Link href='/about' className='py-2 px-6 tracking-wide  text-gray-50 bg-[#1d4ed8] rounded-sm  '>Learn More</Link>
           </p>
     </div>
         </div>
